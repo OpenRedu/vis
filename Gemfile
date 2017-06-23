@@ -21,7 +21,7 @@ group :assets do
 end
 
 group :test, :development do
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '1.6.0'
   gem "rspec-rails", "~> 2.9.0"
   gem 'mongoid-rspec'
   #gem 'debugger'
