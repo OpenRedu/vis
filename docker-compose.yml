@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  mongo:
+    image: 'mongo:latest'
+    volumes:
+      - 'mongodb:/data/db'
+
+  app:
+    depends_on:
+      - 'mongo'
+    build: .
+    ports:
+      - "4002:4002"
+    volumes:
+      - '.:/app'
+
+volumes:
+  mongodb:
