@@ -21,10 +21,10 @@ group :assets do
 end
 
 group :test, :development do
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '1.6.0'
   gem "rspec-rails", "~> 2.9.0"
   gem 'mongoid-rspec'
-  gem 'debugger'
+  #gem 'debugger'
   gem "shoulda-matchers"
 end
 
@@ -34,7 +34,6 @@ end
 
 gem 'jquery-rails'
 gem 'roar-rails'
-gem 'mongolicious'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
