@@ -1,21 +1,21 @@
 development:
-  host: mongo
+  host: vismongo
   database: vis_development
   port: 27017
 
 test:
-  host: mongo
+  host: vismongo
   database: vis_test
 
 # set these environment variables on your staging server
 staging:
-  host: mongo
+  host: vismongo
   database: vis_staging
 
 
 # set these environment variables on your prod server
 production:
-  host: mongo
+  host: vismongo
   database: vis_production
 
 

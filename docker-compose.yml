@@ -1,14 +1,14 @@
 version: '2'
 
 services:
-  mongo:
+  vismongo:
     image: 'mongo:latest'
     volumes:
       - 'mongodb:/data/db'
 
-  app:
+  vis:
     depends_on:
-      - 'mongo'
+      - vismongo
     build: .
     ports:
       - "4002:4002"
